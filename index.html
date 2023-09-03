@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>CRUD Application</title>
+</head>
+
+<body style="color:white; background-color:  grey;">
+
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"><strong>Personal Details Form</h1></strong>
+        </div>
+    <div class="main row justify-content-center">
+    <form action=" " id="student-form" class="row justify-content-center mb-4" autocmplete="off">
+        <div class="col-10 col-md-8 mb-3">
+            <label for="UserName">User Name</label>
+            <input class="form-control " id="UserName" type="text" placeholder="Enter User Name" >
+        </div>
+        <div class="col-10 col-md-8 mb-3">
+            <label for="MobileNo">Mobile No</label>
+            <input class="form-control " id="MobileNo" type="text" placeholder="Enter Mobile No." pattern="[0-9]{10}">
+        </div>
+        <div class="col-10 col-md-8 mb-3">
+            <label for="Email">Email</label>
+            <input class="form-control" id="Email" type="text" placeholder="Enter Email">
+        </div>
+        <div class="col-10 col-md-8 mb-3">
+            <label for="State">State</label>
+            <input class="form-control" id="State" id="State2" type="text" placeholder="Enter State">
+        </div>
+        <div class="col-10 col-md-8 mb-3">
+            <label for="Pincode">Pincode</label>
+            <input class="form-control" id="Pincode" type="number" placeholder="Enter Pincode">
+        </div>
+        <div class="col-10 col-md-8">
+            <input class="btn btn-success add-btn" type="submit" value="Submit">
+        </div>
+    </form>
+    <div class="col-12 col-md-10 mt-5">
+        <table class="table table-striped table-light">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>Mobile No.</th>
+                    <th>Email</th>
+                    <th>State</th>
+                    <th>Pincode</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="student-list">
+                <tr>
+                    <td>Unknown</td>
+                    <td>0987654321</td>
+                    <td>abc@gmail.com</td>
+                    <td>Rajasthan</td>
+                    <td>324005</td>
+                    <td>
+                        <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                        <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+  <script src="script.js"></script>  
+</body>
+</html>
